@@ -24,8 +24,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import Sum from './Sum';
-
 const App: () => React$Node = () => {
   return (
     <>
@@ -37,15 +35,12 @@ const App: () => React$Node = () => {
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
-              <Text style={styles.footer}>{'Engine: Hermes}'}</Text>
+              <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>{`Step One ${Sum(
-                10,
-                2,
-              )}`}</Text>
+              <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
                 screen and then come back to see your edits.
