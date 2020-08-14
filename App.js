@@ -25,7 +25,6 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Sum from './Sum';
-import Subtract from './Subtract';
 
 const App: () => React$Node = () => {
   return (
@@ -46,8 +45,7 @@ const App: () => React$Node = () => {
               <Text style={styles.sectionTitle}>{`Step One ${Sum(
                 10,
                 2,
-              )}
-              Subtract: 10 - 2 = ${10, 2}`}</Text>
+              )}`}</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
                 screen and then come back to see your edits.
